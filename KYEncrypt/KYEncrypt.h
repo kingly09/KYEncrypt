@@ -34,4 +34,19 @@
  */
 + (KYEncrypt *) sharedInstance;
 
+/**
+ Base64 加密字符串
+
+ @param inputString 需要加密的字符串
+ @return 返回Base64 加密字符串
+ */
+- (NSString *)encodeBase64String:(NSString *)inputString;
+
+/**
+ Base64 解密字符串
+ 
+ @param inputString Base64加密过的字符串
+ @return 解密Base64 加密过的字符串
+ */
+- (NSString *)decodeBase64String:(NSString *)inputString;
 @end

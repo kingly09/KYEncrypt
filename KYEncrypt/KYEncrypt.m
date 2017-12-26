@@ -26,6 +26,7 @@
 //
 
 #import "KYEncrypt.h"
+#import "GTMBase64.h"
 
 @implementation KYEncrypt
 
@@ -59,5 +60,33 @@ static KYEncrypt *sharedObj = nil; //第一步：静态实例，并初始化。
     return self;
 }
 
+
+/**
+ Base64 加密字符串
+ 
+ @param inputString 需要加密的字符串
+ @return 返回Base64 加密字符串
+ */
+- (NSString *)encodeBase64String:(NSString *)inputString {
+    
+    NSData *data = [inputString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 encodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
+}
+
+/**
+ Base64 解密字符串
+ 
+ @param inputString Base64加密过的字符串
+ @return 解密Base64 加密过的字符串
+ */
+- (NSString *)decodeBase64String:(NSString *)inputString {
+    
+    NSData *data = [inputString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 decodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
+}
 
 @end
