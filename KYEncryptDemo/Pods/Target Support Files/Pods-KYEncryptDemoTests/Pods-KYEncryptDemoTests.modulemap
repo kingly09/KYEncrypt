@@ -1,0 +1,6 @@
+framework module Pods_KYEncryptDemoTests {
+  umbrella header "Pods-KYEncryptDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
