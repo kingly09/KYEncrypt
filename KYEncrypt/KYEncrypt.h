@@ -121,4 +121,15 @@
  */
 - (NSString *)AES256DecryptWithString:(NSString *)str withKey:(NSString *)key;
 
+/**
+ * @brief MD5 返回大写加密
+ * @param inputString 需要加密的字符串
+ */
+- (NSString *)md5_uppercase:(NSString *)inputString;
+/**
+ * @brief MD5加密
+ * @param inputString 需要加密的字符串
+ */
+- (NSString *)md5_str:(NSString *)inputString;
+
 @end

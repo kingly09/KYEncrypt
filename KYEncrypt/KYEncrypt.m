@@ -27,6 +27,7 @@
 
 #import "KYEncrypt.h"
 #import "GTMBase64.h"
+#import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
 #define FBENCRYPT_ALGORITHM     kCCAlgorithmAES128
@@ -448,5 +449,30 @@ static KYEncrypt *sharedObj = nil; //第一步：静态实例，并初始化。
     return deAES256text;
 }
 
+/**
+ * @brief MD5 返回大写加密
+ * @param inputString 需要加密的字符串
+ */
+- (NSString *)md5_uppercase:(NSString *)inputString {
+    NSString *xMd5 = [self md5_str:inputString];
+    return  [xMd5 uppercaseString];
+}
+/**
+ * @brief MD5加密
+ * @param inputString 需要加密的字符串
+ */
+- (NSString *)md5_str:(NSString *)inputString {
+    
+    const char *cStr = [inputString UTF8String];
+    unsigned char result[16];
+    CC_MD5(cStr, (CC_LONG)strlen(cStr), result );
+    
+    return [NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
+            result[0], result[1], result[2], result[3],
+            result[4], result[5], result[6], result[7],
+            result[8], result[9], result[10], result[11],
+            result[12], result[13], result[14], result[15]
+            ];
+}
 
 @end
