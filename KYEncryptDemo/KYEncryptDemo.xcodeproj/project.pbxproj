@@ -15,6 +15,7 @@
 		BC4845C91FF1EC7400AFB63D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845C81FF1EC7400AFB63D /* main.m */; };
 		BC4845D31FF1EC7400AFB63D /* KYEncryptDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845D21FF1EC7400AFB63D /* KYEncryptDemoTests.m */; };
 		BC4845DE1FF1EC7400AFB63D /* KYEncryptDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845DD1FF1EC7400AFB63D /* KYEncryptDemoUITests.m */; };
+		BC4845EE1FF1EF0600AFB63D /* KYEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845ED1FF1EF0600AFB63D /* KYEncrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		BC4845D91FF1EC7400AFB63D /* KYEncryptDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYEncryptDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4845DD1FF1EC7400AFB63D /* KYEncryptDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYEncryptDemoUITests.m; sourceTree = "<group>"; };
 		BC4845DF1FF1EC7400AFB63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4845EC1FF1EF0600AFB63D /* KYEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYEncrypt.h; sourceTree = "<group>"; };
+		BC4845ED1FF1EF0600AFB63D /* KYEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYEncrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		BC4845B81FF1EC7400AFB63D /* KYEncryptDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC4845EB1FF1EEF100AFB63D /* KYEncrypt */,
 				BC4845B91FF1EC7400AFB63D /* AppDelegate.h */,
 				BC4845BA1FF1EC7400AFB63D /* AppDelegate.m */,
 				BC4845BC1FF1EC7400AFB63D /* ViewController.h */,
@@ -130,6 +134,16 @@
 				BC4845DF1FF1EC7400AFB63D /* Info.plist */,
 			);
 			path = KYEncryptDemoUITests;
+			sourceTree = "<group>";
+		};
+		BC4845EB1FF1EEF100AFB63D /* KYEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				BC4845EC1FF1EF0600AFB63D /* KYEncrypt.h */,
+				BC4845ED1FF1EF0600AFB63D /* KYEncrypt.m */,
+			);
+			name = KYEncrypt;
+			path = ../../KYEncrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +282,7 @@
 				BC4845BE1FF1EC7400AFB63D /* ViewController.m in Sources */,
 				BC4845C91FF1EC7400AFB63D /* main.m in Sources */,
 				BC4845BB1FF1EC7400AFB63D /* AppDelegate.m in Sources */,
+				BC4845EE1FF1EF0600AFB63D /* KYEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
