@@ -29,4 +29,9 @@
 
 @interface KYEncrypt : NSObject
 
+/**
+ * @breif 获取实例
+ */
++ (KYEncrypt *) sharedInstance;
+
 @end
