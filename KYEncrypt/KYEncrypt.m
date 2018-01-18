@@ -442,7 +442,9 @@ static KYEncrypt *sharedObj = nil; //第一步：静态实例，并初始化。
  @return 返回加密的字符串
  */
 - (NSString *)AES256DecryptWithString:(NSString *)str withKey:(NSString *)key {
-    
+  
+    _sKey = key;
+  
     NSData *AES256Data  = [GTMBase64 decodeString:str];
     NSData *deAES256BData = [self AES256DecryptWithData:AES256Data];
     NSString *deAES256text = [[NSString alloc] initWithData:deAES256BData encoding:NSUTF8StringEncoding];
