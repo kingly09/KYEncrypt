@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3805BFA6A97AA7FBAB939201 /* Pods_KYEncryptDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4845ECD3DCE5F223AF6E1C3 /* Pods_KYEncryptDemoUITests.framework */; };
+		BC358BDD2094728B00EEE270 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC358BDB2094728B00EEE270 /* Interface.storyboard */; };
+		BC358BDF2094728C00EEE270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC358BDE2094728C00EEE270 /* Assets.xcassets */; };
+		BC358BE62094728C00EEE270 /* asaasa Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC358BE52094728C00EEE270 /* asaasa Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC358BEC2094728C00EEE270 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC358BEB2094728C00EEE270 /* InterfaceController.m */; };
+		BC358BEF2094728C00EEE270 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC358BEE2094728C00EEE270 /* ExtensionDelegate.m */; };
+		BC358BF22094728C00EEE270 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC358BF12094728C00EEE270 /* NotificationController.m */; };
+		BC358BF42094728D00EEE270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC358BF32094728D00EEE270 /* Assets.xcassets */; };
+		BC358BF92094728D00EEE270 /* asaasa.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BC358BD92094728B00EEE270 /* asaasa.app */; };
 		BC4845BB1FF1EC7400AFB63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845BA1FF1EC7400AFB63D /* AppDelegate.m */; };
 		BC4845BE1FF1EC7400AFB63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4845BD1FF1EC7400AFB63D /* ViewController.m */; };
 		BC4845C11FF1EC7400AFB63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4845BF1FF1EC7400AFB63D /* Main.storyboard */; };
@@ -22,6 +30,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC358BE72094728C00EEE270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4845AE1FF1EC7400AFB63D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC358BE42094728C00EEE270;
+			remoteInfo = "asaasa Extension";
+		};
+		BC358BF72094728D00EEE270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4845AE1FF1EC7400AFB63D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC358BD82094728B00EEE270;
+			remoteInfo = asaasa;
+		};
 		BC4845CF1FF1EC7400AFB63D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC4845AE1FF1EC7400AFB63D /* Project object */;
@@ -38,12 +60,51 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BC358BFF2094728D00EEE270 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC358BE62094728C00EEE270 /* asaasa Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC358C012094728D00EEE270 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BC358BF92094728D00EEE270 /* asaasa.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		47C2D4C45E1BC9DE97C84E18 /* Pods-KYEncryptDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYEncryptDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYEncryptDemoUITests/Pods-KYEncryptDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AFF420D83B50E18A5355521 /* Pods-KYEncryptDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYEncryptDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYEncryptDemoUITests/Pods-KYEncryptDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D44A770CF2546D83B32437C /* Pods-KYEncryptDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYEncryptDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYEncryptDemoTests/Pods-KYEncryptDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F95CACD54089BB2D929D9D8 /* Pods_KYEncryptDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYEncryptDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B008CD7E29E592A78F2D5182 /* Pods_KYEncryptDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYEncryptDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC358BD92094728B00EEE270 /* asaasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asaasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC358BDC2094728B00EEE270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BC358BDE2094728C00EEE270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC358BE02094728C00EEE270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC358BE52094728C00EEE270 /* asaasa Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "asaasa Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC358BEA2094728C00EEE270 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		BC358BEB2094728C00EEE270 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		BC358BED2094728C00EEE270 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		BC358BEE2094728C00EEE270 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		BC358BF02094728C00EEE270 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		BC358BF12094728C00EEE270 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		BC358BF32094728D00EEE270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC358BF52094728D00EEE270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC358BF62094728D00EEE270 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BC4845B61FF1EC7400AFB63D /* KYEncryptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYEncryptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4845B91FF1EC7400AFB63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC4845BA1FF1EC7400AFB63D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +130,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC358BE22094728C00EEE270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC4845B31FF1EC7400AFB63D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,12 +174,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC358BDA2094728B00EEE270 /* asaasa */ = {
+			isa = PBXGroup;
+			children = (
+				BC358BDB2094728B00EEE270 /* Interface.storyboard */,
+				BC358BDE2094728C00EEE270 /* Assets.xcassets */,
+				BC358BE02094728C00EEE270 /* Info.plist */,
+			);
+			path = asaasa;
+			sourceTree = "<group>";
+		};
+		BC358BE92094728C00EEE270 /* asaasa Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC358BEA2094728C00EEE270 /* InterfaceController.h */,
+				BC358BEB2094728C00EEE270 /* InterfaceController.m */,
+				BC358BED2094728C00EEE270 /* ExtensionDelegate.h */,
+				BC358BEE2094728C00EEE270 /* ExtensionDelegate.m */,
+				BC358BF02094728C00EEE270 /* NotificationController.h */,
+				BC358BF12094728C00EEE270 /* NotificationController.m */,
+				BC358BF32094728D00EEE270 /* Assets.xcassets */,
+				BC358BF52094728D00EEE270 /* Info.plist */,
+				BC358BF62094728D00EEE270 /* PushNotificationPayload.apns */,
+			);
+			path = "asaasa Extension";
+			sourceTree = "<group>";
+		};
 		BC4845AD1FF1EC7400AFB63D = {
 			isa = PBXGroup;
 			children = (
 				BC4845B81FF1EC7400AFB63D /* KYEncryptDemo */,
 				BC4845D11FF1EC7400AFB63D /* KYEncryptDemoTests */,
 				BC4845DC1FF1EC7400AFB63D /* KYEncryptDemoUITests */,
+				BC358BDA2094728B00EEE270 /* asaasa */,
+				BC358BE92094728C00EEE270 /* asaasa Extension */,
 				BC4845B71FF1EC7400AFB63D /* Products */,
 				C9D2A80982D4F9936604924E /* Pods */,
 				6909967FE930BDBBFD93BAB8 /* Frameworks */,
@@ -124,6 +220,8 @@
 				BC4845B61FF1EC7400AFB63D /* KYEncryptDemo.app */,
 				BC4845CE1FF1EC7400AFB63D /* KYEncryptDemoTests.xctest */,
 				BC4845D91FF1EC7400AFB63D /* KYEncryptDemoUITests.xctest */,
+				BC358BD92094728B00EEE270 /* asaasa.app */,
+				BC358BE52094728C00EEE270 /* asaasa Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +287,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC358BD82094728B00EEE270 /* asaasa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC358C002094728D00EEE270 /* Build configuration list for PBXNativeTarget "asaasa" */;
+			buildPhases = (
+				BC358BD72094728B00EEE270 /* Resources */,
+				BC358BFF2094728D00EEE270 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC358BE82094728C00EEE270 /* PBXTargetDependency */,
+			);
+			name = asaasa;
+			productName = asaasa;
+			productReference = BC358BD92094728B00EEE270 /* asaasa.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BC358BE42094728C00EEE270 /* asaasa Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC358BFE2094728D00EEE270 /* Build configuration list for PBXNativeTarget "asaasa Extension" */;
+			buildPhases = (
+				BC358BE12094728C00EEE270 /* Sources */,
+				BC358BE22094728C00EEE270 /* Frameworks */,
+				BC358BE32094728C00EEE270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "asaasa Extension";
+			productName = "asaasa Extension";
+			productReference = BC358BE52094728C00EEE270 /* asaasa Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		BC4845B51FF1EC7400AFB63D /* KYEncryptDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC4845E21FF1EC7400AFB63D /* Build configuration list for PBXNativeTarget "KYEncryptDemo" */;
@@ -199,10 +331,12 @@
 				BC4845B41FF1EC7400AFB63D /* Resources */,
 				4FE93EFA8878B71759A40D5E /* [CP] Embed Pods Frameworks */,
 				416B6DB516FBA046606E4184 /* [CP] Copy Pods Resources */,
+				BC358C012094728D00EEE270 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC358BF82094728D00EEE270 /* PBXTargetDependency */,
 			);
 			name = KYEncryptDemo;
 			productName = KYEncryptDemo;
@@ -260,6 +394,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "KYEncrypt Software (https://github.com/kingly09/KYEncrypt ) by kingly inc.\n\n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.";
 				TargetAttributes = {
+					BC358BD82094728B00EEE270 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					BC358BE42094728C00EEE270 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					BC4845B51FF1EC7400AFB63D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -292,11 +434,30 @@
 				BC4845B51FF1EC7400AFB63D /* KYEncryptDemo */,
 				BC4845CD1FF1EC7400AFB63D /* KYEncryptDemoTests */,
 				BC4845D81FF1EC7400AFB63D /* KYEncryptDemoUITests */,
+				BC358BD82094728B00EEE270 /* asaasa */,
+				BC358BE42094728C00EEE270 /* asaasa Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC358BD72094728B00EEE270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC358BDF2094728C00EEE270 /* Assets.xcassets in Resources */,
+				BC358BDD2094728B00EEE270 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC358BE32094728C00EEE270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC358BF42094728D00EEE270 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC4845B41FF1EC7400AFB63D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +635,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC358BE12094728C00EEE270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC358BEF2094728C00EEE270 /* ExtensionDelegate.m in Sources */,
+				BC358BEC2094728C00EEE270 /* InterfaceController.m in Sources */,
+				BC358BF22094728C00EEE270 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC4845B21FF1EC7400AFB63D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +675,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC358BE82094728C00EEE270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC358BE42094728C00EEE270 /* asaasa Extension */;
+			targetProxy = BC358BE72094728C00EEE270 /* PBXContainerItemProxy */;
+		};
+		BC358BF82094728D00EEE270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC358BD82094728B00EEE270 /* asaasa */;
+			targetProxy = BC358BF72094728D00EEE270 /* PBXContainerItemProxy */;
+		};
 		BC4845D01FF1EC7400AFB63D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC4845B51FF1EC7400AFB63D /* KYEncryptDemo */;
@@ -517,6 +698,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BC358BDB2094728B00EEE270 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC358BDC2094728B00EEE270 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		BC4845BF1FF1EC7400AFB63D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -536,6 +725,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC358BFA2094728D00EEE270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				IBSC_MODULE = asaasa_Extension;
+				INFOPLIST_FILE = asaasa/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYEncryptDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BC358BFB2094728D00EEE270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				IBSC_MODULE = asaasa_Extension;
+				INFOPLIST_FILE = asaasa/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYEncryptDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		BC358BFC2094728D00EEE270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = "asaasa Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYEncryptDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BC358BFD2094728D00EEE270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = "asaasa Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYEncryptDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 		BC4845E01FF1EC7400AFB63D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,6 +1006,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC358BFE2094728D00EEE270 /* Build configuration list for PBXNativeTarget "asaasa Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC358BFC2094728D00EEE270 /* Debug */,
+				BC358BFD2094728D00EEE270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC358C002094728D00EEE270 /* Build configuration list for PBXNativeTarget "asaasa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC358BFA2094728D00EEE270 /* Debug */,
+				BC358BFB2094728D00EEE270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC4845B11FF1EC7400AFB63D /* Build configuration list for PBXProject "KYEncryptDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
